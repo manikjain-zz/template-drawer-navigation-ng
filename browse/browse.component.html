@@ -12,7 +12,11 @@
         <MyDrawer [selectedPage]="'Browse'"></MyDrawer>
     </StackLayout>
     
-    <StackLayout tkMainContent>
-        <Label text="Browse Page"></Label>
+    <StackLayout class="page" tkMainContent>
+        <AbsoluteLayout class="pageIcon">
+            <StackLayout>
+               <Label text="&#xf1ea;" class="fa"></Label> 
+            </StackLayout>
+        </AbsoluteLayout>
     </StackLayout>
 </RadSideDrawer>

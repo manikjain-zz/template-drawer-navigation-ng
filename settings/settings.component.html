@@ -12,7 +12,11 @@
         <MyDrawer [selectedPage]="'Settings'"></MyDrawer>
     </StackLayout>
     
-    <StackLayout tkMainContent>
-        <Label text="Settings Page"></Label>
+    <StackLayout class="page" tkMainContent>
+        <AbsoluteLayout class="pageIcon">
+            <StackLayout>
+               <Label text="&#xf013;" class="fa"></Label> 
+            </StackLayout>
+        </AbsoluteLayout>
     </StackLayout>
 </RadSideDrawer>
