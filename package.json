@@ -1,6 +1,6 @@
 {
   "name": "nativescript-ng-ui-kit-drawer",
-  "displayName": "Drawer Navigation"
+  "displayName": "Drawer Navigation",
   "version": "0.1.0",
   "description": "Simple template with Drawer navigation for NativeScript apps using Angular",
   "license": "SEE LICENSE IN <your-license-filename>",
