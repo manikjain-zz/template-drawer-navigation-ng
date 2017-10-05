@@ -37,11 +37,6 @@ $sidedrawer-list-icon-size: 20;
 
     .sidedrawer-content {
         background-color: $side-drawer-background;
-        height: 100%;
-
-        ListView {
-            height: 100%;
-        }
     }
 
     .sidedrawer-list-item {
