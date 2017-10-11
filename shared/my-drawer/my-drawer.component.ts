@@ -1,6 +1,4 @@
 import { Component, Input, OnInit } from "@angular/core";
-import { RouterExtensions } from "nativescript-angular/router";
-import { ItemEventData } from "ui/list-view";
 
 /* ***********************************************************
 * Keep data that is displayed in your app drawer in the MyDrawer component class.
@@ -20,10 +18,6 @@ export class MyDrawerComponent implements OnInit {
     *************************************************************/
     @Input() selectedPage: string;
 
-    constructor(private routerExtensions: RouterExtensions) {
-
-    }
-
     ngOnInit(): void {
         /* ***********************************************************
         * Use the MyDrawerComponent "onInit" event handler to initialize the properties data values.
@@ -31,20 +25,7 @@ export class MyDrawerComponent implements OnInit {
     }
 
     /* ***********************************************************
-    * Use the "itemTap" event handler of the <ListView> component for handling list item taps.
-    * The "itemTap" event handler of the app drawer <ListView> is used to navigate the app
-    * based on the tapped navigationItem's route.
-    *************************************************************/
-    onNavItemTap(navItemRoute: string): void {
-        this.routerExtensions.navigate([navItemRoute], {
-            transition: {
-                name: "fade"
-            }
-        });
-    }
-
-    /* ***********************************************************
-    * The "isPageSelected" function is bound to every navigation item on the <ListView>.
+    * The "isPageSelected" function is bound to every navigation item on the <MyDrawerItem>.
     * It is used to determine whether the item should have the "selected" class.
     * The "selected" class changes the styles of the item, so that you know which page you are on.
     *************************************************************/
