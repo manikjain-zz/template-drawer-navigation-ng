@@ -35,6 +35,7 @@ export class AppComponent implements OnInit {
     }
 
     onNavItemTap(navItemRoute: string): void {
+        this._selectedPage = navItemRoute.slice(1).replace(/^\w/, c => c.toUpperCase());
         this.routerExtensions.navigate([navItemRoute], {
             transition: {
                 name: "fade"
